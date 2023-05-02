@@ -14,7 +14,6 @@ if gpus:
     try:
         for gpu in gpus:
             tf.config.experimental.set_memory_growth(gpu,True)
-            #tf.config.per_process_gpu_memory_fraction = 0.4 # 메모리 사용률 제한
     except RuntimeError as e:
         print(e)
 
