@@ -45,8 +45,6 @@ class ResidualUnit(tf.keras.Model):
         return self.identity(x) + h
 
 
-# In[ ]:
-
 
 class ResnetLayer(tf.keras.Model):
     def __init__(self, filter_in, filters, kernel_size):
@@ -62,7 +60,6 @@ class ResnetLayer(tf.keras.Model):
         return x
 
 
-# In[ ]:
 
 
 class AL_predictor(tf.keras.Model):
